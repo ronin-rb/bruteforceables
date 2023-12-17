@@ -8,6 +8,7 @@ All apps require the username `admin` and the password `password1234`.
 
 ## Apps
 
+* [ftp/](ftp) - An FTP server.
 * `http/`
   * [basic_auth](http/basic_auth) - A Ruby Sinatra app that uses HTTP
     Basic-Auth.

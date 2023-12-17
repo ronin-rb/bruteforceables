@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+  ftp:
+    image: bruteforceable-ftp
+    hostname: ftp.bruteforceable
+    build:
+      context: .
+    ports:
+        - 0.0.0.0:20:20
+        - 0.0.0.0:21:21
