@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  web:
+    image: bruteforceable-http-basic-auth
+    hostname: http-basic-auth.bruteforceable
+    build:
+      context: .
+    ports:
+      - "8000:8000"
