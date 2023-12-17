@@ -1,0 +1,28 @@
+# bruteforceable
+
+A collection of bruteforceable apps. Useful for testing bruteforcers.
+
+## Credentials
+
+All apps require the username `admin` and the password `password1234`.
+
+## Apps
+
+* `http/`
+  * [basic_auth](http/basic_auth) - A Ruby Sinatra app that uses HTTP
+    Basic-Auth.
+
+## Contributing
+
+### New Apps
+
+* Must exist within a directory.
+* Must contain a `Dockerfile` to build the app as a docker image.
+* Must contain a `docker-compose.yml` file for quickly starting up the docker
+  image.
+* Must contain a `Makefile` for building the docker image and running either
+  the app or the docker image.
+* Must contain an `index.html` page which describes the vulnerability and links
+  to the vulnerable webpage.
+* Must contain a `README.md` file containing basic instructions on how to run
+  and view the web app.
