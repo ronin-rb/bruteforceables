@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  ssh:
+    image: bruteforceable-ssh
+    hostname: ssh.bruteforceable
+    build:
+      context: .
+    ports:
+        - 0.0.0.0:22:22
