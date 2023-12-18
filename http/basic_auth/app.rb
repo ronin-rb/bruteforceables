@@ -3,7 +3,7 @@ require 'sinatra/base'
 class App < Sinatra::Base
 
   use Rack::Auth::Basic,"Protected Area" do |username, password|
-    username == 'admin' && password == 'password123'
+    username == 'admin' && password == 'password1234'
   end
 
   get '/' do
