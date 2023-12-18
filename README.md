@@ -12,6 +12,8 @@ All apps require the username `admin` and the password `password1234`.
 * `http/`
   * [basic_auth](http/basic_auth) - A Ruby Sinatra app that uses HTTP
     Basic-Auth.
+  * [html_login_form](http/html_login_form) - A Ruby Sinatra app that uses a
+    HTML login form.
 
 ## Contributing
 
