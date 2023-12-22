@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  imap:
+    build:
+      context: .
+    ports:
+      - "143:143"
+      - "993:993"
+    environment:
+      - MAILNAME=example.com
+      - MAIL_ADDRESS=admin@example.com
+      - MAIL_PASS=password1234
