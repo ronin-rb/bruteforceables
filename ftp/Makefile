@@ -4,7 +4,7 @@ build: Dockerfile
 	docker build -t bruteforceable-ftp .
 
 run: build
-	docker run --rm -it -p 8080:80 bruteforceable-ftp
+	docker run --rm -it -p 21:21 bruteforceable-ftp
 
 clean:
 	docker image rm bruteforceable-ftp
