@@ -1,12 +1,12 @@
 all: run
 
 build: Dockerfile
-	docker build -t bruteforceable-pop3 .
+	docker build -t bruteforceable-imap .
 
 run: build
-	docker run --rm -it -p 110:110 -p 995:995 bruteforceable-pop3
+	docker run --rm -it -p 143:143 -p 995:995 bruteforceable-imap
 
 clean:
-	docker image rm bruteforceable-pop3
+	docker image rm bruteforceable-imap
 
 .PHONY: all build run clean
