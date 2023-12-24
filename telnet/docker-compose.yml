@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  ssh:
+    image: bruteforceable-telnet
+    hostname: telnet.bruteforceable
+    build:
+      context: .
+    ports:
+        - 0.0.0.0:23:23
