@@ -1,6 +1,7 @@
 # bruteforceables
 
-A collection of bruteforceable apps. Useful for testing bruteforcers.
+A collection of bruteforceable apps and servers. Useful for testing network
+bruteforcers.
 
 ## Credentials
 
