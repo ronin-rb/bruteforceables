@@ -38,7 +38,8 @@ class App < Sinatra::Base
   use Warden::Manager do |config|
     config.serialize_into_session { |user| user[:username] }
     config.serialize_from_session { |username| Users.load(username) }
-    config.scope_defaults :default, strategies: [:password], action: "auth/unauthenticated"
+    config.scope_defaults :default, strategies: [:password],
+                           action: "auth/unauthenticated"
     config.failure_app = self
   end
 
@@ -47,20 +48,20 @@ class App < Sinatra::Base
     erb :index
   end
 
-  get '/auth/login' do
+  get '/login' do
     erb :login
   end
 
-  post '/auth/login' do
+  post '/login' do
     env['warden'].authenticate!
     redirect '/'
   end
 
-  unathentication = -> { redirect '/auth/login' }
+  unathentication = -> { redirect '/login' }
   get  '/auth/unauthenticated', &unathentication
   post '/auth/unauthenticated', &unathentication
 
-  get '/auth/logout' do
+  get '/logout' do
     env['warden'].logout
     redirect '/'
   end
