@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  ssh:
+    image: bruteforceable-mysql
+    hostname: mysql.bruteforceable
+    build:
+      context: .
+    ports:
+        - 0.0.0.0:3306:3306
