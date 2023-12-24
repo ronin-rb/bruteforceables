@@ -1,4 +1,4 @@
-# bruteforceable
+# bruteforceables
 
 A collection of bruteforceable apps. Useful for testing bruteforcers.
 
