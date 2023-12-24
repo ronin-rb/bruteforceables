@@ -15,7 +15,7 @@ All apps require the username `admin` and the password `password1234`.
   * [html_login_form](http/html_login_form) - A Ruby Sinatra app that uses a
     HTML login form.
 * [telnet/](telnet) - A telnet server.
-* [ssh/](ssh) - An SSH server.
+* [ssh/](ssh) - A SSH server.
 
 ## Contributing
 
