@@ -15,6 +15,8 @@ All apps require the username `admin` and the password `password1234`.
     Basic-Auth.
   * [html_login_form](http/html_login_form) - A Ruby Sinatra app that uses a
     HTML login form.
+* [imap/](imap) - An IMAP server.
+* [pop3/](pop3) - A POP3 server.
 * [telnet/](telnet) - A telnet server.
 * [ssh/](ssh) - A SSH server.
 
