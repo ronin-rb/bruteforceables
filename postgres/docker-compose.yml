@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  postgres:
+    image: bruteforceable-postgres
+    hostname: postgres.bruteforceable
+    build:
+      context: .
+    ports:
+        - 0.0.0.0:5432:5432
