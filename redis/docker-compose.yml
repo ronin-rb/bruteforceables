@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  redis:
+    image: bruteforceable-redis
+    hostname: redis.bruteforceable
+    build:
+      context: .
+    ports:
+        - 0.0.0.0:6379:6379

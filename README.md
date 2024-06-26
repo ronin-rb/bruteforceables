@@ -19,6 +19,7 @@ All apps require the username `admin` and the password `password1234`.
 * [mysql/](mysql) - A MySQL server.
 * [pop3/](pop3) - A POP3 server.
 * [postgres/](postgres) - A PostgreSQL server.
+* [redis/](redis) - A Redis server.
 * [telnet/](telnet) - A telnet server.
 * [ssh/](ssh) - A SSH server.
 
