@@ -1,7 +1,7 @@
 version: '2.1'
 
 services:
-  ssh:
+  mysql:
     image: bruteforceable-mysql
     hostname: mysql.bruteforceable
     build:

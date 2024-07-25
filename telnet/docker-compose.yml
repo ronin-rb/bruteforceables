@@ -1,7 +1,7 @@
 version: '2.1'
 
 services:
-  ssh:
+  telnet:
     image: bruteforceable-telnet
     hostname: telnet.bruteforceable
     build:
