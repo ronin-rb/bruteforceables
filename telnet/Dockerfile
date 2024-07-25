@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
-ENV TELNET_USER admin
-ENV TELNET_PASS password1234
+ENV TELNET_USER=admin
+ENV TELNET_PASS=password1234
 
 RUN apt-get update && apt-get install -y telnetd systemctl
 
