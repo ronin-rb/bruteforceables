@@ -1,6 +1,6 @@
 FROM mysql:latest
 
-MAINTAINER baeldung.com
+LABEL maintainer="postmodern.mod3@gmail.com"
 
 RUN chown -R mysql:root /var/lib/mysql/
 

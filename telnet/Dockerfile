@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+LABEL maintainer="postmodern.mod3@gmail.com"
+
 ENV TELNET_USER=admin
 ENV TELNET_PASS=password1234
 

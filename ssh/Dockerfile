@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+LABEL maintainer="postmodern.mod3@gmail.com"
+
 RUN apt-get update && apt-get install -y openssh-server sudo
 
 ENV SSH_USER=admin
